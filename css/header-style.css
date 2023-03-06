@@ -1,0 +1,47 @@
+/*heder*/
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 11.5rem;
+  font-size:1em;
+  background-color: #fff; 
+}
+
+.menu > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__title{
+  width:15rem;
+  margin-right: 4.5rem;
+}
+
+.menu__form{ 
+  width: 39rem;  
+}
+
+.menu__form > label > input{
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  background-color: #F5F5F5;
+  border: none;
+}
+
+.menu__nave .menu__nave__login{
+  width: 18rem;
+  height: 5rem;
+  border-radius: 5px;
+  border: 1px solid var(--cor-de-borde-blue);
+  color:var(--cor-text-blue);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/*header*/
