@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header-style.css" />
+    <link rel="stylesheet" href="./css/banner-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
@@ -16,19 +17,31 @@
   <body>
     <header class="menu">
       <div>
-        <h1 class="menu__title"><img src="./assets/img/Logo.png" alt="logo da empresa"></h1>
+        <h1>
+          <img
+            src="assets/img/Logo.png"
+            alt="logo da empresa"
+            class="menu__logo"
+          />
+        </h1>
         <form action="" class="menu__form">
-          <label for=""><input type="text" placeholder="O que deseja encontrar?"/></label>
+          <label for=""
+            ><input type="search" placeholder="O que deseja encontrar?" />
+            <img src="assets/img/search.svg" alt="search"
+          /></label>
         </form>
+        <button class="menu__login">Login</button>
       </div>
-      <nav class="menu__nave"><button class="menu__nave__login">Login</button></nav>
     </header>
+    <!-- 
     <section class="banner">
       <div class="banner__content">
         <h2 class="banner__content__title">Dezembro Promocional</h2>
-        <p class="banner__content__subtitle">Produtos selecionados com 33% de desconto</p>
+        <p class="banner__content__subtitle">
+          Produtos selecionados com 33% de desconto
+        </p>
         <button class="banner__content__btn">Ver Consoles</button>
       </div>
-    </section>
+    </section> -->
   </body>
 </html>
