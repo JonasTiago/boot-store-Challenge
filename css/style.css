@@ -1,11 +1,12 @@
 :root {
   /*Insira a variavel das outras cores inspecionando o modelo do figma*/
   /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-  --cor-de-fundo-green: #;
-  --cor-de-fundo-blue: #;
-  --cor-de-fundo-gray: #;
+  --cor-bg-green: #;
+  --cor-bg-blue: #;
+  --cor-bg-gray: #;
+  --cor-bg-white: #FFFFFF;
 
-  --cor-de-borde-blue: #2A7AE4;
+  --cor-borde-blue: #2A7AE4;
   --cor-text-blue:#2A7AE4; 
   --cor-button-blue:#2A7AE4; 
 
@@ -22,46 +23,4 @@
 html{
   font-size: 62.5%;
   background-color: #efefef;
-}
-
-section.banner{
-  width: 100%;
-  height: 45vh;
-  font-size: 1em;
-  background-color: red;
-  background-image: url("../assets/img/banner-image.png");
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-section.banner .banner__content{
-  color: var(--cor-text-white);
-  position: absolute;
-  bottom: 0;
-  left: 15%;
-  bottom: 3rem;
-}
-
-.banner__content .banner__content__title{
-  font-size: 5.2rem;
-  margin: 1.6rem 0;
-}
-
-.banner__content .banner__content__subtitle{
-  font-size: 2.2rem;
-  margin: 1rem 0;
-}
-.banner__content .banner__content__btn{
-  font-size: 1.6rem;
-  margin: 1rem 0;
-  width: 18rem;
-  height: 5rem;
-  border-radius: 5px;
-  border: none;
-  background-color: var(--cor-button-blue);
-  color:var(--cor-text-white);
-  font-size: 1.6rem;
-  font-weight: 400;
 }

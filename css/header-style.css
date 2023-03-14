@@ -13,8 +13,7 @@
   align-items: center;
 }
 
-
-.menu__logo{
+.menu__logo {
   width: 10em;
   height: 3em;
 }
@@ -27,11 +26,12 @@
   display: none;
 }
 
-.menu__form > label img {
-  width: 3em;
+.menu__form > label > img {
+  width: 2rem;
+  height: 2rem;
 }
 
-.menu__login{
+.menu__login {
   width: 13rem;
   height: 4rem;
   background-color: var(--cor-text-white);
@@ -39,8 +39,84 @@
   font-weight: 600;
   color: var(--cor-text-blue);
   border: 2px solid var(--cor-borde-blue);
+  border-radius: 5px;
 }
-/*header*/
 
-@media screen and (max-width: 768px) {
+/*SMALL DEVICES - SMARTPHONES*/
+
+@media screen and (min-width: 576px) {
+  /* @media screen and (min-width: 576px) { */
+  .menu {
+    padding: 1.9em 3em;
+  }
+  .menu__form {
+    order: inherit;
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .menu__form > label {
+    position: relative;
+  }
+
+  .menu__form > label input {
+    display: inherit;
+    width: 27.2rem;
+    height: 4rem;
+    border: none;
+    background-color: #f5f5f5;
+    padding: 1.6rem;
+    border-radius: 50px;
+  }
+
+  .menu__form > label img {
+    position: absolute;
+    margin-top: 1rem;
+    right: 15px;
+  }
+
+  .menu__login {
+    min-width: 10rem;
+  }
+}
+
+/*SMALL DEVICES - TABLETS-Desc*/
+@media (min-width: 1024px) {
+  .menu {
+    height: 11.5rem;
+    font-size: 1em;
+  }
+
+  .menu > div {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .menu__logo {
+    width: 20em;
+    height: initial;
+  }
+
+  .menu__form {
+    order: inherit;
+    padding-left: 2rem;
+  }
+
+  .menu__form > label {
+    position: relative;
+  }
+
+  .menu__form > label input {
+    width: 39rem;
+    height: 4rem;
+  }
+
+  .menu__login {
+    min-width: 10rem;
+    width: 16rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }
