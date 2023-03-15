@@ -1,0 +1,149 @@
+footer {
+  background-color: #eaf2fd;
+  font-size: 1em;
+}
+
+footer > div {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer .dev{
+  width: 100%;
+  height: 10rem;
+  background-color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  gap: .5rem;
+}
+
+.footer__logo {
+  width: 20em;
+  margin-bottom: 2.6rem;
+}
+
+.footer__list {
+  font-size: 1.6rem;
+}
+
+.footer__list > li {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.contact__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding: 1.6rem 0;
+  width: 100%;
+}
+.footer__contact > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer__contact > div label {
+  position: absolute;
+  font-size: 1.6rem;
+  color: #a2a2a2;
+  top: 2rem;
+  left: 1.2rem;
+}
+
+.contact__text {
+  height: 5.6rem;
+  margin-bottom: 1.6rem;
+  padding: 2rem 1.2rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.contact__message {
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: 8.2rem;
+  margin-bottom: 1rem;
+  padding: 0rem 0 2.6rem 1.2rem;
+  border: none;
+}
+
+.contact__submit {
+  width: 50%;
+  height: 4.5rem;
+  background-color: var(--cor-button-blue);
+  color: var(--cor-text-white);
+  border: none;
+}
+
+@media screen and (min-width: 576px) {
+  footer > div {
+    flex-direction: row;
+    justify-content: inherit;
+    padding: 3.2rem auto;
+  }
+
+  footer .dev{
+    flex-direction: column;
+  }
+
+  footer > div > div {
+    margin-right: 9rem;
+  }
+
+  .footer__list > li {
+    text-align: start;
+    margin-bottom: 2.4rem;
+    padding-left: 1rem;
+  }
+
+  .footer__contact {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer > div {
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+  }
+
+  footer > div > div {
+    margin-right: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 6.4rem auto;
+
+  }
+
+  .footer__logo {
+    width: 17rem;
+    height: 5rem;
+  }
+
+  .footer__list > li {
+    text-align: start;
+    margin-bottom: 2.4rem;
+    padding-left: 1rem;
+  }
+
+  .footer__contact {
+    align-self: flex-start;
+    width: 50%;
+  }
+}
