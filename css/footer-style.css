@@ -115,20 +115,27 @@ footer .dev{
 }
 
 @media (min-width: 1024px) {
-  footer > div {
+  footer > div:nth-child(1) {
     width: 80%;
     margin: auto;
-    padding-top: 4rem;
+    padding: 6.4rem;
   }
 
   footer > div > div {
     margin-right: 4rem;
+    margin-top: 4rem;
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 6.4rem auto;
+  }
 
+  .dev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer__logo {

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header-style.css" />
+    <link rel="stylesheet" href="./css/footer-style.css" />
+    <link rel="stylesheet" href="./css/login-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>AluraGeek - Login</title>
+  </head>
+  <body>
+    <header class="menu">
+      <div>
+        <h1>
+          <a href="index.html">
+            <img
+              src="assets/img/Logo.png"
+              alt="logo da loja"
+              class="menu__logo"
+            />
+          </a>
+        </h1>
+        <form action="" class="menu__form">
+          <label for=""
+            ><input type="search" placeholder="O que deseja encontrar?" />
+            <img src="assets/img/search.svg" alt="search"
+          /></label>
+        </form>
+        <button class="menu__login invisivel">Login</button>
+      </div>
+    </header>
+    <main>
+      <section class="login">
+        <form action="" class="login__form">
+          <legend class="login__form__title">Iniciar Sessão</legend>
+          <div>
+            <input
+              type="email"
+              name="login"
+              id="login"
+              class="login__form__input"
+              onblur="{labelBlur(this)}"
+            />
+            <label for="login">Escreva seu email</label>
+          </div>
+          <div>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              class="login__form__input"
+              onblur="{labelBlur(this)}"
+            />
+            <label for="senha">Escreva sua senha</label>
+          </div>
+          <input type="submit" value="Entrar" class="login__form__submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <img
+            src="assets/img/Logo.png"
+            alt="Logo da loja"
+            class="footer__logo"
+          />
+          <ul class="footer__list">
+            <li>Quem somos nós</li>
+            <li>Política de privacidade</li>
+            <li>Programa fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+        </div>
+        <form action="" class="footer__contact">
+          <legend class="contact__title">Fale conosco</legend>
+          <div>
+            <label for="name" id="name">Nome</label>
+            <input type="text" class="contact__text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="message" id="message">Escreva sua mensagem</label>
+            <input
+              type="text"
+              class="contact__message"
+              name="message"
+              id="message"
+            />
+          </div>
+          <input
+            type="submit"
+            value="Enviar mensagem"
+            class="contact__submit"
+          />
+        </form>
+      </div>
+      <div class="dev">
+        <p>Desenvolvido por Jonas Santos</p>
+        <span>2021</span>
+      </div>
+    </footer>
+  </body>
+  <script src="js/animation.js"></script>
+</html>

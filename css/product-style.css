@@ -58,7 +58,7 @@
 
 @media (min-width: 1024px) {
   .gallery__product {
-    gap: 1.6rem;
+    gap: 3.8rem;
     overflow-y: hidden;
     overflow-x: hidden;
     flex-wrap: nowrap;
