@@ -63,7 +63,7 @@ section.banner {
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   section.banner {
     width: 100%;
     height: 40em;

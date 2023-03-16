@@ -1,0 +1,42 @@
+.create__products{
+  padding: 5rem 1.6rem;
+  background-color: #efefef;
+}
+
+.produtc__form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.produtc__form div{
+  width: 100%;
+}
+
+.product__input{
+  width: 100%;
+  height: 5.6rem;
+}
+
+.product__bnt{
+  font-size: 1.6rem;
+  margin:1rem 0;
+}
+
+
+
+@media screen and (min-width: 576px) {
+  .create__products{
+    padding: 5rem 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .create__products{
+    width: 50%;
+    margin: auto;
+  }
+}
+

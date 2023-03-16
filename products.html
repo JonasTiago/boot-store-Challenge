@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/header-style.css" />
     <link rel="stylesheet" href="./css/footer-style.css" />
     <link rel="stylesheet" href="./css/login-style.css" />
+    <link rel="stylesheet" href="./css/formProduct-style.css" />
     <link rel="stylesheet" href="./css/form-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
@@ -38,36 +39,60 @@
       </div>
     </header>
     <main>
-      <section class="login">
-        <form action="" class="login__form">
-          <legend class="form__title">Iniciar Sessão</legend>
+      <section class="create__products">
+        <form action="" class="produtc__form">
+          <legend class="form__title">Adicionar novo produto</legend>
           <div>
             <input
-              type="email"
-              name="login"
-              id="login"
-              class="login__input form__input"
+              type="url"
+              name="url"
+              id="url"
+              class="form__input product__input"
               onblur="{labelBlur(this)}"
             />
-            <label for="login" class="form__label">Escreva seu email</label>
+            <label class="form__label" for="url">URL da imagem</label>
           </div>
           <div>
             <input
-              type="password"
-              name="senha"
-              id="senha"
-              class="login__input form__input"
+              type="text"
+              name="category"
+              id="category"
+              class="form__input product__input"
               onblur="{labelBlur(this)}"
             />
-            <label for="senha" class="form__label">Escreva sua senha</label>
+            <label class="form__label" for="category">Categoria</label>
           </div>
-          <a href="homeProduct.html">
+          <div>
             <input
-              type="button"
-              value="Entrar"
-              class="form__submit login__submit"
+              type="text"
+              name="name"
+              id="name"
+              class="form__input product__input"
+              onblur="{labelBlur(this)}"
             />
-          </a>
+            <label class="form__label" for="name">Nome do produto/label>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="price"
+              id="price"
+              class="form__input product__input"
+              onblur="{labelBlur(this)}"
+            />
+            <label class="form__label" for="price">Preço do produto</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              class="form__input product__input"
+              onblur="{labelBlur(this)}"
+            />
+            <label class="form__label" for="description">Descrição do produto</label>
+          </div>
+          <input type="submit" value="Adicionar produto" class="form__submit product__input product__bnt" />
         </form>
       </section>
     </main>

@@ -6,13 +6,12 @@
   padding: 1.6rem;
 }
 
-.gallery > div {
+.div__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
   margin:0 0 1.6rem 0;
-
 }
 
 .gallery__title {
@@ -28,10 +27,15 @@
   .gallery {
     padding: 3.2rem;
   }
+
+  .gallery__link {
+    font-size: 1.6rem;
+  }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .gallery {
+    padding: 6rem 4rem;
     width: 80%;
   }
 }
