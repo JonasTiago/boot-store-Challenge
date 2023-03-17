@@ -3,7 +3,7 @@ section.banner {
   height: 19.5em;
   font-size: 1em;
   background-color: white;
-  background-image: url('../assets/img/banner-p.png');
+  background-image: url('../img/banner-p.png');
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ section.banner {
     height: 35.2em;
     font-size: 1em;
 
-    background-image: url('../assets/img/banner-m.png');
+    background-image: url('../img/banner-m.png');
   }
 
   .banner__content {
@@ -68,7 +68,7 @@ section.banner {
     width: 100%;
     height: 40em;
     font-size: 1em;
-    background-image: url('../assets/img/banner-g.png');
+    background-image: url('../img/banner-g.png');
   }
 
   .banner__content {
