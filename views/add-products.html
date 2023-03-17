@@ -49,6 +49,7 @@
               id="url"
               class="form__input product__input"
               onblur="{labelBlur(this)}"
+              required
             />
             <label class="form__label" for="url">URL da imagem</label>
           </div>
@@ -59,6 +60,7 @@
               id="category"
               class="form__input product__input"
               onblur="{labelBlur(this)}"
+              required
             />
             <label class="form__label" for="category">Categoria</label>
           </div>
@@ -69,8 +71,10 @@
               id="name"
               class="form__input product__input"
               onblur="{labelBlur(this)}"
+              required
+              minlength="5"
             />
-            <label class="form__label" for="name">Nome do produto/label>
+            <label class="form__label" for="name">Nome do produto</label>
           </div>
           <div>
             <input
@@ -79,6 +83,8 @@
               id="price"
               class="form__input product__input"
               onblur="{labelBlur(this)}"
+              required
+              minlength="5"
             />
             <label class="form__label" for="price">Preço do produto</label>
           </div>
@@ -89,6 +95,7 @@
               id="description"
               class="form__input product__input"
               onblur="{labelBlur(this)}"
+              required
             />
             <label class="form__label" for="description">Descrição do produto</label>
           </div>
@@ -142,5 +149,5 @@
       </div>
     </footer>
   </body>
-  <script src="js/animation.js"></script>
+  <script src="../js/animation.js"></script>
 </html>
