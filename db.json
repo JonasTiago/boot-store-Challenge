@@ -1,46 +1,26 @@
 {
+  "profile": [
+    {
+      "name": "jonas",
+      "email": "jonas@alura.com",
+      "password": "1234567",
+      "id": 1
+    },
+    {
+      "name": "tifi",
+      "email": "tifane@alura.com",
+      "password": "123456",
+      "id": 1
+    }
+  ],
   "produtos": [
     {
-      "id": 1,
-      "nome": "Goku",
-      "urlImg": "https://m.media-amazon.com/images/I/51KJqhhcMZL._AC_SL1076_.jpg",
-      "price": "20.00",
-      "descricao": "otima qualidade e desconto"
-    },
-    {
-      "id": 1,
-      "nome": "Goku",
-      "urlImg": "https://m.media-amazon.com/images/I/51KJqhhcMZL._AC_SL1076_.jpg",
-      "price": "20.00",
-      "descricao": "otima qualidade e desconto"
-    },
-    {
-      "id": 1,
-      "nome": "Goku",
-      "urlImg": "https://m.media-amazon.com/images/I/51KJqhhcMZL._AC_SL1076_.jpg",
-      "price": "20.00",
-      "descricao": "otima qualidade e desconto"
-    },
-    {
-      "id": 1,
-      "nome": "Goku",
-      "urlImg": "https://m.media-amazon.com/images/I/51KJqhhcMZL._AC_SL1076_.jpg",
-      "price": "20.00",
-      "descricao": "otima qualidade e desconto"
-    },
-    {
-      "id": 1,
-      "nome": "Goku",
-      "urlImg": "https://m.media-amazon.com/images/I/51KJqhhcMZL._AC_SL1076_.jpg",
-      "price": "20.00",
-      "descricao": "otima qualidade e desconto"
-    },
-    {
-      "id": 1,
-      "nome": "Goku",
-      "urlImg": "https://m.media-amazon.com/images/I/51KJqhhcMZL._AC_SL1076_.jpg",
-      "price": "20.00",
-      "descricao": "otima qualidade e desconto"
+      "name": "asdsad",
+      "urlImg": "https://st4.depositphotos.com/3539239/24197/i/600/depositphotos_241972656-stock-photo-rio-de-janeiro-brazil-september.jpg",
+      "price": "dasdasas",
+      "description": "dsad",
+      "category": "asdasd",
+      "id": 1
     }
   ]
 }

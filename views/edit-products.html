@@ -7,71 +7,51 @@
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/header-style.css" />
+    <link rel="stylesheet" href="../assets/css/banner-style.css" />
+    <link rel="stylesheet" href="../assets/css/gallery-style.css" />
+    <link rel="stylesheet" href="../assets/css/homeProduct-style.css" />
+    <link rel="stylesheet" href="../assets/css/product-style.css" />
     <link rel="stylesheet" href="../assets/css/footer-style.css" />
-    <link rel="stylesheet" href="../assets/css/login-style.css" />
-    <link rel="stylesheet" href="../assets/css/form-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek</title>
   </head>
   <body>
     <header class="menu">
       <div>
-        <h1>
-          <a href="../index.html">
+        <a href="../index.html">
+          <h1>
             <img
               src="../assets/img/Logo.png"
               alt="logo da loja"
               class="menu__logo"
             />
-          </a>
-        </h1>
+          </h1>
+        </a>
         <form action="" class="menu__form">
           <label for=""
             ><input type="search" placeholder="O que deseja encontrar?" />
             <img src="../assets/img/search.svg" alt="search"
           /></label>
         </form>
-        <button class="menu__login invisivel">Login</button>
+        <!-- <button class="menu__login"><a href="login.html">Login</a></button> -->
       </div>
     </header>
     <main>
-      <section class="login">
-        <form action="" class="login__form" data-login>
-          <legend class="form__title">Iniciar Sessão</legend>
-          <div>
-            <input
-              type="email"
-              name="login"
-              id="login"
-              class="login__input form__input"
-              onblur="{labelBlur(this)}"
-              data-email
-              required
-            />
-            <label for="login" class="form__label">Escreva seu email</label>
+      <section>
+        <div class="gallery">
+          <div class="div__col">
+            <h3 class="gallery__title">Todos os produtos</h3>
+            <a href="/views/add-products.html"
+              ><button class="product__bnt">Adicionar produto</button></a
+            >
           </div>
-          <div>
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              class="login__input form__input"
-              onblur="{labelBlur(this)}"
-              data-password
-              required
-            />
-            <label for="senha" class="form__label">Escreva sua senha</label>
-          </div>
-
-          <input
-            type="submit"
-            value="Entrar"
-            class="form__submit login__submit"
-          />
-        </form>
+          <ul class="gallery__product" data-gallery>
+            
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -107,10 +87,11 @@
               id="message"
             />
           </div>
+          type="submit"
           <input
-            type="submit"
             value="Enviar mensagem"
             class="contact__submit"
+            onclick="deleteProduct(1)"
           />
         </form>
       </div>
@@ -119,8 +100,8 @@
         <span>2021</span>
       </div>
     </footer>
+    <script src="../js/animation.js"></script>
+    <script type="module" src="../controllers/editProducts-controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
-  <script src="../js/animation.js"></script>
-  <script type="module" src="../controllers/login-controller.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

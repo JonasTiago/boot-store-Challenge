@@ -40,7 +40,7 @@
     </header>
     <main>
       <section class="create__products">
-        <form action="" class="produtc__form">
+        <form class="produtc__form" data-create>
           <legend class="form__title">Adicionar novo produto</legend>
           <div>
             <input
@@ -50,6 +50,7 @@
               class="form__input product__input"
               onblur="{labelBlur(this)}"
               required
+              data-url
             />
             <label class="form__label" for="url">URL da imagem</label>
           </div>
@@ -61,6 +62,7 @@
               class="form__input product__input"
               onblur="{labelBlur(this)}"
               required
+              data-category
             />
             <label class="form__label" for="category">Categoria</label>
           </div>
@@ -72,6 +74,7 @@
               class="form__input product__input"
               onblur="{labelBlur(this)}"
               required
+              data-name
               minlength="5"
             />
             <label class="form__label" for="name">Nome do produto</label>
@@ -84,6 +87,7 @@
               class="form__input product__input"
               onblur="{labelBlur(this)}"
               required
+              data-price
               minlength="5"
             />
             <label class="form__label" for="price">Preço do produto</label>
@@ -95,11 +99,20 @@
               id="description"
               class="form__input product__input"
               onblur="{labelBlur(this)}"
+              data-description
               required
             />
-            <label class="form__label" for="description">Descrição do produto</label>
+            <label class="form__label" for="description"
+              >Descrição do produto</label
+            >
           </div>
-          <input type="submit" value="Adicionar produto" class="form__submit product__input product__bnt" />
+          <input
+            type="submit"
+            value="Adicionar produto"
+            class="form__submit product__input product__bnt"
+          />
+          <!-- <span data-confirm>Produto Adicionado!</span>
+          <span data-erro>Erro ao Adicionado!</span> -->
         </form>
       </section>
     </main>
@@ -121,7 +134,7 @@
             <li>Anuncie aqui</li>
           </ul>
         </div>
-        <form action="" class="footer__contact">
+        <form  class="footer__contact">
           <legend class="contact__title">Fale conosco</legend>
           <div>
             <label for="name" id="name">Nome</label>
@@ -137,7 +150,6 @@
             />
           </div>
           <input
-            type="submit"
             value="Enviar mensagem"
             class="contact__submit"
           />
@@ -148,6 +160,11 @@
         <span>2021</span>
       </div>
     </footer>
+    <script src="../js/animation.js"></script>
+    <script
+      type="module"
+      src="../controllers/createProducts-controller.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
-  <script src="../js/animation.js"></script>
 </html>
